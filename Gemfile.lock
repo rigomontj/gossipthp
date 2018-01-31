@@ -128,7 +128,7 @@ GEM
       pry (>= 0.10.4)
     public_suffix (3.0.1)
     puma (3.11.2)
-    rack (2.0.3)
+    rack (2.0.4)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -248,7 +248,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma
-  rails (~> 5.1.4)
+  rails
   rspec-rails
   sass-rails
   shoulda-matchers
@@ -261,8 +261,5 @@ DEPENDENCIES
   uglifier
   web-console
 
-RUBY VERSION
-   ruby 2.3.4p301
-
 BUNDLED WITH
-   1.16.1
+   1.16.0

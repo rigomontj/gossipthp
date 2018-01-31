@@ -4,9 +4,7 @@ source 'https://rubygems.org'
 #gem 'devise'
 #gem 'pundit'
 
-ruby '~> 2.3.4'
-
-gem 'rails', '~> 5.1.4'
+gem 'rails'
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
@@ -14,7 +12,6 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'tacit', '~> 1.0'
 
 group :development, :test do
   gem 'sqlite3'
@@ -49,3 +46,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
