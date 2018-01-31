@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gossip</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="//cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.2.8.min.css"/>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= render "shared/navbar" %>
+  </body>
+</html>

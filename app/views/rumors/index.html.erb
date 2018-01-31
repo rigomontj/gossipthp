@@ -1,0 +1,26 @@
+<h1>Gossip list</h1>
+
+  <% @rumors.each do |r| %>
+
+<table>
+    <tr>
+        <th>Rumor</th>
+        <th>From</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td><%= r.content %></td>
+        <td><%= r.a_author %></td>
+        <td>
+        <%= link_to 'Show', rumor_path(r) %> -
+        <%= link_to 'Edit', edit_rumor_path(r) %> -
+        <%= link_to 'Delete', rumor_path(r),
+              method: :delete,
+              data: {confirm: 'Are you sure ?'} %>
+        </td>
+    </tr>
+</br>
+
+</table>
+
+  <% end %>

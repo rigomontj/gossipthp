@@ -1,0 +1,16 @@
+<h1>Edit</h1>
+
+  <%= form_tag rumor_path(@rumor), method: :put do %>
+
+  <%= label_tag 'a_author', 'Author' %>
+  </br>
+  <%= text_field_tag 'a_author', @rumor.a_author%>
+  </br>
+  </br>
+  <%= label_tag 'content', 'Edit content' %>
+  </br>
+  <%= text_area_tag "content", @rumor.content, :size =>"60x10" %>
+  </br>
+
+  <%= submit_tag 'Edit' %>
+<% end %>
